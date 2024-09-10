@@ -1,4 +1,5 @@
 mod wallpaper;
+mod config;
 
 fn main() {
     let wallpapers = wallpaper::list_images_from_dir("/home/prepodobnuy/Documents/Wallpapers", "");
