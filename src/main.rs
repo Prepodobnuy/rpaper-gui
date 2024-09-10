@@ -1,3 +1,8 @@
+mod wallpaper;
+
 fn main() {
-    println!("Hello, world!");
+    let wallpapers = wallpaper::list_images_from_dir("/home/prepodobnuy/Documents/Wallpapers", "");
+    for wallpaper in wallpapers {
+        println!("{} => {}", wallpaper.tag, wallpaper.path)
+    }
 }
